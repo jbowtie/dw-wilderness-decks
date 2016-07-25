@@ -1,14 +1,22 @@
-<section class="card">
-  <main>
-  <p>A small movement catches your attention as you pass by. The leaves on a nearby tree are dagger-shaped,
-  in a pleasingly deep green colour, and they are motionless in the still air. Yet one leaf is twitching
-  feverishly, for no obvious reason.</p>
-  </main>
-  <footer>
-    <p>Mountains</p>
-    <p>04</p>
-  </footer>
-</section>
+<div class="c deck">
+  <section class="card mountain">
+    <h2>Into the Mountains</h2>
+    <main>
+      <p>A small movement catches your attention as you pass by. The leaves on a nearby tree are dagger-shaped,
+        in a pleasingly deep green colour, and they are motionless in the still air. Yet one leaf is twitching
+        feverishly, for no obvious reason.</p>
+    </main>
+    <footer>
+      <p>Mountains</p>
+      <p>04</p>
+    </footer>
+  </section>
+  <div class="card mountain back">
+    <h2>Mountains</h2>
+  </div>
+</div>
+
+<!-- div class="c">
 <section class="card">
   <main>
   <p>Lorem ipsum dolor sit amet, ea sea numquam inermis expetenda. Ex eos sonet tacimates, id probo nobis sed, rebum putent ponderum an eam. Postea adipisci mea an, sit cu adhuc tibique. Eum mnesarchum reprehendunt et, ad verterem consequuntur sed. Delenit consequat no eam, illud discere ea ius.</p>
@@ -37,3 +45,4 @@
     <p>04</p>
   </footer>
 </section>
+</div-->

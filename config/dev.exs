@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :wilderness, Wilderness.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "wilderness",
+  password: "dev",
   database: "wilderness_dev",
   hostname: "localhost",
   pool_size: 10

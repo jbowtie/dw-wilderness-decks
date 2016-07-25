@@ -1,1 +1,96 @@
-/* This file is for your main application css. */section.card {    border: 1px solid #333;    background-color: #eee;    border-radius: 6px;    position:relative;    padding:5em 6px 6px;    width: 30em;    height: 38em;    margin: 2em auto;    box-shadow: 0 5px 15px rgba(0,0,0,0.7);    opacity: 1;    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;}section.card:hover {    /*transform: rotate(10deg) translateX(15em) translateY(-10em);*/    transform: rotateY(-180deg) translateX(2em);    opacity: 0;}section.card main {    padding:1em;    background-color: rgba(100%,100%,100%,0.7);    height:calc(100% - 7em);    overflow-y: scroll;}section.card footer {    font-size: smaller;    position:absolute;    bottom: 0em;    width:100%;}section.card footer *:last-child {    position:absolute;    right: 12px;    bottom: 0em;}
+body {
+    background: url(/images/tweed.png);
+}
+
+.c {
+    position:relative;
+    width:30em;
+    height:38em;
+    margin-bottom: 2em;
+    margin: 2em auto;
+    transition: transform 0.8s ease-in-out;
+}
+
+.c.deck {
+    transform: translateY(39rem) scale(0.45,0.45);
+}
+
+.card, .card.back {
+    border: 1px solid #333;
+    background-color: #eee;
+    border-radius: 2em;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding:2em 12px 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    opacity: 1;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card.back {
+    background-image: url(/images/mountainPH.jpg);
+    transform: rotateY(-180deg);
+    background-size: cover;
+}
+
+.c.deck .card {
+    /*transform: rotate(10deg) translateX(15em) translateY(-10em);*/
+    transform: rotateY(-180deg);
+    opacity: 1;
+}
+.c.deck .card.back {
+    /*transform: rotate(10deg) translateX(15em) translateY(-10em);*/
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.card main {
+    padding:1em;
+    background-color: rgba(100%,100%,100%,0.7);
+    height:calc(100% - 7em);
+    overflow-y: scroll;
+}
+
+.card footer {
+    font-size: smaller;
+    position:absolute;
+    bottom: 0em;
+    width:100%;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card footer *:last-child {
+    position:absolute;
+    right: 24px;
+    bottom: 0em;
+}
+
+
+.card h2 {
+    font-family: "Bree Serif";
+    font-weight: normal;
+    text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+    color: #333;
+    margin-top:0;
+}
+
+
+.card h3 {
+    margin:0 0 1rem;
+    font-size:1.5rem;
+    font-variant:small-caps;
+}
+
+.mountain {
+    background-image: url(/images/mountainPH.jpg);
+    background-size: cover;
+}
+
+.card.back h2 {
+    font-size: 5rem;
+}
